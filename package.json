@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Eunsong-Park/ghcr-test#readme",
   "publishConfig": {
-   "@Eunsong-Park:registry": "https://npm.pkg.github.com"
+   "Eunsong-Park:registry": "https://npm.pkg.github.com"
  }
 }
