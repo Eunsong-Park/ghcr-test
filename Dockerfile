@@ -8,6 +8,7 @@ COPY ./ ./
 RUN --mount=type=secret,id=PORT \
   --mount=type=secret,id=DB_URL \
   export PORT=$(cat /run/secrets/PORT) && \
-  export DB_URL=$(cat /run/secrets/DB_URL)
+  export DB_URL=$(cat /run/secrets/DB_URL) \
+  printenv > .env
 
 CMD [ "env" ]
